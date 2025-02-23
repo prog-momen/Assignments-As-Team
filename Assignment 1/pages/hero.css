@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.text-section h1 {
+    font-weight: bold;
+}
+
+.text-section .text-muted {
+    font-size: 1.1rem;
+}
+
+
+.btn-primary {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.chatbot {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.chatbot img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.chatbot span {
+    font-size: 14px;
+    color: black;
+}
