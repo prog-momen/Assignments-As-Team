@@ -17,6 +17,18 @@ img {
     height: auto;
     display: block;
 }
+.btn-primary{
+    background-color: antiquewhite #1545f1;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    top: 50px;
+}
+.btn-primary:hover{
+    background-color: #323131;
+    color: white;
+    top: -1px;
+}
 
 .container {
     max-width: 1200px;
