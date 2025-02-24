@@ -1,0 +1,22 @@
+
+.testimonial-heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: gray;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.testimonial-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+.testimonial-title span {
+    color: blue;
+}
+
