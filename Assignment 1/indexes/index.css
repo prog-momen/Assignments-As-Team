@@ -1,0 +1,162 @@
+/* تخصيص خط الموقع */
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* تخصيص قائمة التنقل */
+nav {
+    height: 10vh;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* تخصيص الهيدر */
+.hero-section {
+    background: url('image.png') center/cover no-repeat;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section .container {
+    text-align: left;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero-section .btn-primary {
+    font-size: 18px;
+    padding: 12px 25px;
+}
+
+.hero-section .btn-light {
+    font-size: 18px;
+    padding: 12px 25px;
+    border: 1px solid #ccc;
+}
+
+/* تخصيص النص في القسم الثاني */
+.text-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.text-section p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.text-section .btn-primary {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+/* تخصيص عرض الصور */
+.image-container img {
+    border-radius: 15px;
+}
+.card {
+    height: 40vh;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card i {
+    font-size: 3rem;
+}
+
+.text-primary {
+    color: #007bff !important;
+}
+
+/* تحسين الأزرار على الجوال */
+@media (max-width: 992px) {
+    .hero-section h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 0.95rem;
+    }
+
+    .text-section h1 {
+        font-size: 2rem;
+    }
+
+    .text-section p {
+        font-size: 0.9rem;
+    }
+
+    .btn-primary {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    /* جعل زر "About Us" في منتصف الشاشة على الجوال */
+    .text-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .text-section button {
+        margin-top: 20px;
+        align-self: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 0.9rem;
+    }
+
+    .text-section h1 {
+        font-size: 1.6rem;
+    }
+
+    .text-section p {
+        font-size: 0.8rem;
+    }
+
+    .btn-primary {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
