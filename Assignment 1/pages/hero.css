@@ -1,52 +1,88 @@
-body {
-    font-family: Arial, sans-serif;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.text-section h1 {
-    font-weight: bold;
+h1 {
+    font-size: 2.8rem;
 }
 
-.text-section .text-muted {
+p {
     font-size: 1.1rem;
 }
 
-
-.btn-primary {
-    padding: 10px 20px;
-    font-size: 18px;
-    border-radius: 8px;
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-.image-container {
-    position: relative;
-    text-align: center;
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
 }
 
-.image-container img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.chatbot {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    background: white;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+.row {
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: space-between;
 }
 
-.chatbot img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+.col {
+    flex: 1;
+    padding: 20px;
 }
 
-.chatbot span {
-    font-size: 14px;
-    color: black;
+@media (max-width: 992px) {
+    .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    .btn-primary {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .btn-primary {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
 }
