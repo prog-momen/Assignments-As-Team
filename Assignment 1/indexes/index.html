@@ -1,11 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Business Landing Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
-</body>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#"
+          ><img
+            src="../images/333333333.png"
+            alt="Logo"
+            class="rounded-5"
+            width="35"
+          />
+          DivHub</a
+        >
+
+        <button
+          class="btn btn-primary d-lg-none"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#sidebarMenu"
+        >
+          ☰
+        </button>
+
+        <div class="collapse navbar-collapse d-none d-lg-block" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="servicesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                >Services</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Web Development</a></li>
+                <li><a class="dropdown-item" href="#">SEO Optimization</a></li>
+                <li><a class="dropdown-item" href="#">Marketing</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="teamDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                >Team</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Our Experts</a></li>
+                <li><a class="dropdown-item" href="#">Join Us</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+          <span class="ms-3 fw-bold text-primary"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-telephone"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
+              />
+            </svg>
+            +970(595)088-539</span
+          >
+          <a href="#" class="btn btn-primary ms-3">Get in Touch</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarMenu">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title fw-bold">Menu</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="sidebarServicesDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              >Services</a
+            >
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Web Development</a></li>
+              <li><a class="dropdown-item" href="#">SEO Optimization</a></li>
+              <li><a class="dropdown-item" href="#">Marketing</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="sidebarTeamDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              >Team</a
+            >
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Our Experts</a></li>
+              <li><a class="dropdown-item" href="#">Join Us</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <header
+      class="hero-section d-flex align-items-center"
+      style="background: url('image.png') center/cover no-repeat; height: 90vh"
+    >
+      <div class="container text-white text-start ms-auto">
+        <h1 class="fw-bold">
+          We Provide the Best<br />
+          Value for Business
+        </h1>
+        <p>
+          Reliable, proven solutions that meet international industry practices
+          and standards.
+        </p>
+        <div>
+          <a href="#" class="btn btn-primary btn-lg">Get Started Now</a>
+          <a href="#" class="btn btn-light btn-lg">Our Services</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-section">
+                <p class="text-muted small">WELCOME TO ACCTUAL</p>
+                <h1>We Are Calculating The <br> <span class="text-primary">Best Opportunities</span> For You</h1>
+                <p>
+                    Our team is ready to act as a Leader to solve any issues related to the development and implementation of the project. At the same time, we understand the peculiarities of the processes of large corporations and are able to coordinate technical solutions with your internal departments and processes.
+                </p>
+                <button class="btn btn-primary">About Us</button>
+            </div>
+
+            <div class="col-md-6">
+                <div class="image-container">
+                    <img src="../images/hero.jpg" alt="Team Meeting" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="py-5 text-center">
+        <div class="container">
+            <p class="text-uppercase text-muted">Welcome to Acctual</p>
+            <h2 class="fw-bold">Services We are <span class="text-primary">Offering</span></h2>
+            <p class="text-muted">Your business and your commercial goals are above all else. Whatever the scale and nature of your projects, our specialists have the skills and experience necessary to successfully solve your problems.</p>
+            
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card shadow-sm p-4 border-0 text-center">
+                        <div class="text-primary mb-3">
+                            <i class="bi bi-award"></i>
+                        </div>
+                        <h5 class="fw-bold">Great Experiences</h5>
+                        <p class="text-muted">We develop an individual integrated solution for your business...</p>
+                        <a href="#" class="text-primary fw-bold">Read more &gt;</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm p-4 border-0 text-center">
+                        <div class="text-primary mb-3">
+                            <i class="bi bi-display"></i>
+                        </div>
+                        <h5 class="fw-bold">Digital Marketing</h5>
+                        <p class="text-muted">The project is managed by a professional who controls...</p>
+                        <a href="#" class="text-primary fw-bold">Read more &gt;</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm p-4 border-0 text-center">
+                        <div class="text-primary mb-3">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <h5 class="fw-bold">Consulting Services</h5>
+                        <p class="text-muted">You trust your business with one team and in the end get...</p>
+                        <a href="#" class="text-primary fw-bold">Read more &gt;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  </body>
 </html>
